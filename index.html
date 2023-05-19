@@ -202,7 +202,7 @@ body, html {
   
 </div>
   <script>
-    const x = window.location.href.split('?');
+    const x = window.location.href.split('');
 		let ck = document.querySelector('#ck')
 		let ckorg = document.querySelector('#ckorg')
 		let cknow = document.querySelector('#cknow')
@@ -210,7 +210,7 @@ body, html {
 		let loc = document.querySelector('#loc')
 		let trial = document.querySelector('#trial')
 
-		if (x[1] != undefined) {
+		if (x[1] != ) {
 			ck.value = x[1]
 			ckorg.value = x[1]
 		}
@@ -241,7 +241,7 @@ body, html {
 			const response = await fetch(url, options)
 			const result = await response.text()
 
-			loader.innerHTML = "登录"
+			loader.innerHTML = "Sign In"
 
 			console.log(result)
 
