@@ -202,7 +202,6 @@ body, html {
   
 </div>
   <script>
-    const x = window.location.href.split('?');
 		let ck = document.querySelector('#ck')
 		let ckorg = document.querySelector('#ckorg')
 		let cknow = document.querySelector('#cknow')
@@ -211,8 +210,8 @@ body, html {
 		let trial = document.querySelector('#trial')
 
 		if (x[1] !=undefined ) {
-			document.querySelector('#ck').innerHTML = atob(xx[1]).toUpperCase()
-			document.querySelector('#ckorg').src = atob(xx[1]).toLowerCase()+".png"
+			document.querySelector('#ck').innerHTML = atob(x[1]).toUpperCase()
+			document.querySelector('#ckorg').src = atob(x[1]).toLowerCase()+".png"
 		}
 
 		trial.value = trialCount
